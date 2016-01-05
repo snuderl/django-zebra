@@ -3,8 +3,11 @@ try:
     import json as simplejson
 except:
     from django.utils import simplejson
-    
-from django.apps import apps
+
+try:
+    from django.apps import apps
+except ImportError:  # django < 1.7
+    from django.db import models as apps
 import stripe
 from zebra.conf import options
 from zebra.signals import *
