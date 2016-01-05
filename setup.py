@@ -7,11 +7,11 @@ SOURCE_DIR = os.path.join(ROOT_DIR)
 
 setup(
     name = "django-zebra",
-    description = "Library for Django and Stripe",
+    description = "Library for Django and Stripe. Fork that fixes django 1.9 bug.",
     author = "Steven Skoczen",
     author_email = "steven@agoodcloud.com",
     url = "https://github.com/GoodCloud/django-zebra",
-    version = "0.4.5",
+    version = "0.0.0",
     packages = find_packages(),
     zip_safe = False,
     include_package_data=True,
